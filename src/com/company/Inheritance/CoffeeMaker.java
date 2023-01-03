@@ -1,15 +1,17 @@
 package com.company.Inheritance;
 
 public class CoffeeMaker {
-    boolean isOn;
+    boolean isOn = false;
 
     public void turnOn() {
         if(!isOn) System.out.println("power is on");
+        isOn = true;
 
     }
 
     public void turnOff() {
         if(isOn) System.out.println("power is off");
+        isOn = false;
     }
 
     public void brew() {
