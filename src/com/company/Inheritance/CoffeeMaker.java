@@ -1,6 +1,6 @@
 package com.company.Inheritance;
 
-public class CoffeeMaker {
+public abstract class CoffeeMaker implements CoffeeBrewingMachine {
     boolean isOn = false;
 
     public void turnOn() {
@@ -21,4 +21,8 @@ public class CoffeeMaker {
             System.out.println("please turn maker on before brewing");
         }
     }
+
+    public abstract void cleaningRequired();
+
+    public abstract void executeCleaningCycle();
 }

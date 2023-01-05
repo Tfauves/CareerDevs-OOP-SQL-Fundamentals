@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.Inheritance.CoffeeMaker;
+import com.company.Inheritance.DripCoffeeMaker;
 import com.company.Inheritance.EspressoMachine;
 
 public class Main {
@@ -8,9 +9,12 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        CoffeeMaker homeBrewer = new CoffeeMaker();
-        homeBrewer.turnOn();
-        homeBrewer.brew();
+        DripCoffeeMaker drip = new DripCoffeeMaker();
+
+        drip.turnOn();
+        drip.brew();
+        drip.pressCleaningButton();
+
 
         EspressoMachine emachine = new EspressoMachine();
 
@@ -19,7 +23,22 @@ public class Main {
         emachine.frothMilk();
 
         emachine.brew();
-        emachine.brew("double");
+        emachine.brew("single");
+        emachine.brew();
+        emachine.brew();
+        emachine.brew();
+        emachine.brew();
+        emachine.brew();
+        emachine.brew();
+        emachine.brew();
+        emachine.brew();
+        emachine.brew();
+        emachine.brew();
+        emachine.brew();
+        emachine.brew();
+        emachine.brew();
+        emachine.brew();
+
 
     }
 }
