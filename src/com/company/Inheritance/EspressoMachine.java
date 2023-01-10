@@ -10,6 +10,7 @@ public class EspressoMachine extends CoffeeMaker{
             System.out.println("brewing espresso");
             brewCounter++;
         }
+        cleaningRequired();
     }
 
     public void brew(String size) {
@@ -34,7 +35,8 @@ public class EspressoMachine extends CoffeeMaker{
     public void cleaningRequired() {
         if (brewCounter > 15) {
             needsCleaning = true;
-            System.out.println("machine needs cleaning");
+            System.out.println("machine needs cleaning please run cleaning cycle");
+//            System.out.println("start cleaning? y/n");
         }
     }
 

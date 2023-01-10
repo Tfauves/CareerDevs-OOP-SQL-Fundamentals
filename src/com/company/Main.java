@@ -38,7 +38,9 @@ public class Main {
         emachine.brew();
         emachine.brew();
         emachine.brew();
-
+        emachine.brew();
+        emachine.executeCleaningCycle();
+        emachine.frothMilk();
 
     }
 }
